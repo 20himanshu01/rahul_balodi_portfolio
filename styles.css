@@ -1,0 +1,144 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body{
+    background-color: #9290C3;
+}
+
+
+.navbar {
+    background-color: #070F2B;
+    color: beige;
+   border-radius: 4px;
+    width:auto;
+    height: 50px;
+    margin: 0 auto; /* This centers the navbar horizontally */
+    text-align: center; /* This centers the inline elements inside the navbar */
+}
+
+.navbar ul a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul a  {
+    display: inline-block; /* Instead of float, use inline-block */
+    padding: 4px;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 40px; 
+    font-size: xx-large;/* Add some margin between list items */
+    color: azure;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+.navbar ul li:hover{
+    font-size: 26px;
+    color: rgb(253, 253, 196);
+}
+.container{
+   border: 2px solid rgb(241, 225, 225);
+   margin: auto;
+   width: 800px;
+   height: fit-content;
+   background-color: #fbcaf8;
+   text-align: center;
+   padding: 6px;
+   border-radius: 4%;
+   box-shadow: 4px 4px#0b1331;
+}
+p{
+    font-size: 16px;
+    font-weight: bold;
+}
+img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    float: left;
+    box-shadow: 2px 2px#0b1331;
+}
+.foot{
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.container ul li{
+    text-decoration: none;
+    margin-top: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    color: #020101;
+    background-color: #878787;
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px rgb(244, 35, 35);
+}
+h1{
+    font-weight: bolder;
+}
+
+/*animation bolte*/
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .blinking-heading  {
+    animation: pulse 1s infinite;
+    color: #191970;
+  }
+  /* For screens smaller than 600px (mobile) */
+  @media only screen and (max-width: 450px) {
+    .navbar ul a {
+        font-size: 10px;
+        margin-right: 10px; 
+    }
+}
+@media only screen and (max-width: 290px) {
+  .navbar ul a {
+      font-size: 10px;
+      margin-right: 10px; 
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+    .container {
+      width: 90%;
+    }
+    
+    img {
+      float: none; 
+      margin: auto; 
+      display: block;
+      width: 50%;
+    }
+    .navbar ul a{
+        font-size: 20px;
+
+
+    }
+  }
+ 
+  
+  
+  /* For screens larger than 600px (desktop) */
+  @media only screen and (min-width: 1400px) {
+    .container {
+      width: 800px; 
+    }
+    
+    img {
+      float: left; 
+      width: 20%; 
+    }
+  }
+  
